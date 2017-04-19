@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="terrivel.css">
+  <title>Terrível Monstro Verde que come Pedras e mora debaixo da Terra</title>
+</head>
+<body>
+
+  <form action="http://terrivel.herokuapp.com/monster" method="POST"> 
+  <div id="formulario">
+    <span id="legenda"> Alimente o Terrível Monstro Verde que come Pedras e Mora debaixo da Terra </span>
+    <label class="linha">
+      <span class="celula">Nome do seu monstrinho:</span>
+      <input type="text" pattern="[a-zA-Z]*" name="nome" required class="celula"> </label>
+    <label class="linha">
+      <span class="celula">Número de pedras:</span>
+      <input type="number" name="num_pedras" pattern="[0-9]+$"step="1" required class="celula"> </label>
+    <label class="linha">
+      <span class="celula">Tamanho das pedras:</span>
+      <input type="number" name="tam_pedras" step="0.5" value="3" min="1" max="7" class="celula"> </label>
+    <label class="linha">
+      <span class="celula">Tipo de pedras sortidas?</span>
+        <label> <input name="tipo_pedras_sortidas" type="radio" value="sim" checked class="celula"> Sim </label>
+        <label> <input name="tipo_pedras_sortidas" type="radio" value="não" class="celula"> Não </label>
+    </label>
+    <label class="linha">
+      <span class="celula">Tipo de pedra:</span>
+      <select name="tipo_pedras" class="celula">
+        <option value="marroada" selected>Marroada</option>
+        <option value="amestista">Amestista</option>
+        <option value="topazio">Topazio</option>
+        <option value="espinela">Espinela</option>
+      </select>
+    </label>
+    <label class="linha">
+      <span class="celula"> Cor do Céu 1: </span>
+      <input type="color" name="corCeu1" class="celula"> 
+    </label>
+    <label class="linha">
+      <span class="celula"> Cor do Céu 2: </span>
+      <input type="color" name="corCeu2" class="celula"> 
+	</label>
+  </div>
+  <div id="divbotoes">
+    <span id="linhabotoes"> 
+    	<button type="submit" class="botoes">Enviar</button>
+    	<button type="reset" class="botoes">Limpar</button>
+    </span>
+  </div>
+  </form>
+</body>
+</html>

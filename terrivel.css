@@ -1,0 +1,52 @@
+#formulario {
+  width: 500px;
+  margin: 0px auto;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  display: table;
+}
+
+.linha {
+  display: table-row;
+}
+
+.celula {
+  display: table-cell;
+  margin-top: 5px;
+  height: 20px;
+}
+
+#legenda {
+  display: table-caption;
+  margin-bottom: 5px;
+  font-style: bold;
+  font-family: Verdana;
+  font-size: 12px;
+  margin-top: 50%;
+  text-align: center;
+  border:1px solid #d3d3d3;
+}
+
+.botoes {
+  display: table-cell;
+  margin-top: 5px;
+  height: 30px;
+  padding: 10px;
+  margin-right:5px;
+}
+
+#linhabotoes {
+	display: table-row;
+	text-align: center;
+	width: 100%;
+}
+
+#divbotoes {
+	display: table; 
+	width:100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
